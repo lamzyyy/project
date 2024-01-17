@@ -1,0 +1,325 @@
+body,
+html,
+ul,
+li,
+button,
+a,
+p,
+b,
+input,
+img,
+div,
+main,
+h1,
+span,
+section,
+h4 {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: 0;
+  marker: none;
+  list-style: none;
+}
+
+/*<----------- main nav styles ----------->*/
+header {
+  overflow: hidden;
+}
+header .main-flex-container {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  background-color: #131921;
+  color: white;
+}
+header .item {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+header .item:hover {
+  border: white 1px solid;
+  border-radius: 5px;
+}
+header .delivery {
+  min-width: 155px;
+}
+header .smaller {
+  min-width: 80px;
+}
+header .item-bar {
+  padding: 10px;
+}
+header .left-flex {
+  display: flex;
+  align-items: center;
+}
+header .left-flex img {
+  height: 50px;
+}
+header .left-flex a {
+  color: white;
+}
+header .search-bar {
+  display: flex;
+  height: 40px;
+  flex: 1;
+  box-sizing: content-box;
+}
+header .search-bar input {
+  flex: 1;
+  font-size: 15px;
+}
+header .search-bar button {
+  width: 45px;
+  border-radius: 5;
+  color: #131921;
+}
+header .search-bar .button1 {
+  width: 50px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-right: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header .search-bar .button1 i {
+  padding-right: 5px;
+  font-size: 15px;
+}
+header .search-bar .button1 a {
+  color: black;
+}
+header .search-bar .button2 {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-left: 1px solid gray;
+  background-color: #febd69;
+}
+header .search-bar .search-bar i {
+  color: #131921;
+  font-size: 20px;
+}
+header .right-flex {
+  display: flex;
+  padding-right: 5px;
+}
+header .right-flex a {
+  color: white;
+}
+header .right-flex i {
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+/* <------------ subnav section ----------->  */
+header .subnav-container {
+  background-color: rgb(35, 47, 62);
+  color: white;
+  align-items: center;
+  height: 39px;
+  display: flex;
+  padding-left: 11px;
+}
+header .subnav-container .left-subnav {
+  width: 58px;
+  white-space: nowrap;
+}
+header .subnav-container .left-subnav i {
+  padding-right: 5px;
+}
+header .subnav-container ul {
+  display: flex;
+  align-items: center;
+}
+header .subnav-container ul a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 9px 8px 9px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  box-sizing: content-box;
+}
+header .subnav-container a:hover {
+  border: white 1px solid;
+  border-radius: 5px;
+}
+
+/* <--------------main section----------->>*/
+main {
+  overflow: hidden;
+  background-color: #e3e6e6;
+}
+main .section-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: -340px;
+}
+main .section-container .test img {
+  max-height: 600px;
+  max-width: 1500px;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+  overflow: hidden;
+}
+main .grid-section-container {
+  display: flex;
+  justify-content: center;
+}
+main .card-container {
+  display: grid;
+  max-width: 1480px;
+  padding: 0 15px 0 15px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+main .card-container .cards {
+  padding: 20px 20px 15px 20px;
+  display: flex;
+  background-color: white;
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .card-container .cards h1 {
+  font-size: 21px;
+}
+main .card-container .cards .expand-subgrid {
+  height: 300px;
+}
+main .card-container .cards .card-link {
+  color: #007185;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+main .card-container .grid-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 36px 15px;
+}
+main .card-container .grid-card .grid-img-captions {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #131921;
+}
+main .card-container .grid-card img {
+  width: 100%;
+  height: 100%;
+}
+main .card-container .pic-card img {
+  width: 100%;
+  height: 300px;
+}
+main .second-main-container {
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1480px;
+  margin-bottom: 200px;
+}
+main .slides-container {
+  margin: 0 15px 0 15px;
+  background-color: white;
+  max-width: 1450px;
+  padding: 10px 20px 10px 20px;
+}
+main .slides-container h1 {
+  margin-top: 10px;
+}
+main .img-slides {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  gap: 8px;
+  background-color: white;
+  overflow-x: scroll;
+  padding-bottom: 8px;
+}
+main .img-slides::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 2px;
+}
+main .img-slides:hover::-webkit-scrollbar-thumb {
+  background-color: grey; /* Set it to 'initial' or 'auto' for default color */
+}
+main .img-slides::-webkit-scrollbar {
+  height: 6px; /* Set the width of the scrollbar */
+}
+main .line-break {
+  height: 20px;
+  background-color: #e3e6e6;
+}
+main .one-grid {
+  grid-template-rows: 1fr;
+}
+
+/* main section */
+footer .back-to-top {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(35, 47, 62, 0.95);
+  color: white;
+  padding: 15px 0 15px 0;
+  width: 100%;
+}
+footer .back-to-top:hover {
+  background-color: rgba(35, 47, 62, 0.91);
+}
+footer .bckg-col {
+  background-color: #232f3e;
+}
+footer .container {
+  color: white;
+  background-color: #232f3e;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+footer .container .hor-line-break {
+  height: 30px;
+  display: block;
+}
+footer .container ul {
+  display: flex;
+}
+footer .container li {
+  padding: 0 10px 0 10px;
+}
+footer .container .cont-line-break {
+  width: 100px;
+  padding: 10px;
+}
+footer .container .content {
+  display: flex;
+  flex-direction: column;
+}
+footer .container .content a {
+  text-decoration: none;
+  color: #ddd;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+footer .container .content a:hover {
+  text-decoration: underline;
+}
+footer .container .content h4 {
+  margin-bottom: 12px;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=styles.css.map */

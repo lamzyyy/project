@@ -1,0 +1,358 @@
+@use "sass:math";
+$main-head-color: #131921;
+$text-color: white;
+$background: #e3e6e6;
+$footer-background: blue;
+
+body,
+html,
+ul,
+li,
+button,
+a,
+p,
+b,
+input,
+img,
+div,
+main,
+h1,
+span,
+section,
+h4 {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: 0;
+  marker: none;
+  list-style: none;
+}
+/*<----------- main nav styles ----------->*/
+header {
+  overflow: hidden;
+  .main-flex-container {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    background-color: $main-head-color;
+    color: $text-color;
+  }
+  .item {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  .item:hover {
+    border: white 1px solid;
+    border-radius: 5px;
+  }
+
+  .delivery {
+    min-width: math.div(155px, 100vw) * 100vw;
+  }
+  .smaller {
+    min-width: math.div(80px, 100vw) * 100vw;
+  }
+  .item-bar {
+    padding: 10px;
+  }
+  .left-flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .left-flex img {
+    height: 50px;
+  }
+  .left-flex a {
+    color: white;
+  }
+  .search-bar {
+    display: flex;
+    height: 40px;
+    flex: 1;
+    box-sizing: content-box;
+    input {
+      flex: 1;
+      font-size: 15px;
+    }
+    button {
+      width: 45px;
+      border-radius: 5;
+      color: #131921;
+    }
+    .button1 {
+      width: 50px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      border-right: 1px solid gray;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      i {
+        padding-right: 5px;
+        font-size: 15px;
+      }
+      a {
+        color: black;
+      }
+    }
+    .button2 {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-left: 1px solid gray;
+      background-color: #febd69;
+    }
+    .search-bar i {
+      color: #131921;
+      font-size: 20px;
+    }
+  }
+  .right-flex {
+    display: flex;
+    padding-right: 5px;
+  }
+  .right-flex a {
+    color: white;
+  }
+  .right-flex i {
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+}
+/* <------------ subnav section ----------->  */
+header {
+  .subnav-container {
+    background-color: rgb(35, 47, 62);
+    color: white;
+    align-items: center;
+    height: 39px;
+    display: flex;
+    padding-left: 11px;
+
+    .left-subnav {
+      i {
+        padding-right: 5px;
+      }
+      width: 58px;
+      white-space: nowrap;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      a {
+        text-decoration: none;
+        color: $text-color;
+        padding: 8px 9px 8px 9px;
+        white-space: nowrap;
+        font-size: 14px;
+        font-family: "Lato", sans-serif;
+        box-sizing: content-box;
+      }
+    }
+
+    a:hover {
+      border: white 1px solid;
+      border-radius: 5px;
+    }
+  }
+}
+
+/* <--------------main section----------->>*/
+
+main {
+  overflow: hidden;
+  background-color: $background;
+  .section-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: -340px;
+
+    .test img {
+      max-height: 600px;
+      max-width: 1500px;
+      height: 100%;
+      width: auto;
+      margin: 0 auto;
+      display: block;
+      overflow: hidden;
+    }
+  }
+  .grid-section-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-container {
+    display: grid;
+    max-width: 1480px;
+    padding: 0 15px 0 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    .cards {
+      padding: 20px 20px 15px 20px;
+      display: flex;
+      background-color: white;
+      align-items: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      h1 {
+        font-size: 21px;
+      }
+      .expand-subgrid {
+        height: 300px;
+      }
+      .card-link {
+        color: #007185;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+      }
+    }
+
+    .grid-card {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 36px 15px;
+
+      .grid-img-captions {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #131921;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .pic-card {
+      img {
+        width: 100%;
+        height: 300px;
+      }
+    }
+  }
+
+  .second-main-container {
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1480px;
+    margin-bottom: 200px;
+  }
+
+  .slides-container {
+    margin: 0 15px 0 15px;
+    background-color: white;
+    max-width: 1450px;
+    padding: 10px 20px 10px 20px;
+    h1 {
+      margin-top: 10px;
+    }
+  }
+
+  .img-slides {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    gap: 8px;
+    background-color: white;
+    overflow-x: scroll;
+    padding-bottom: 8px;
+  }
+  .img-slides::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 2px;
+  }
+  .img-slides:hover::-webkit-scrollbar-thumb {
+    background-color: grey; /* Set it to 'initial' or 'auto' for default color */
+  }
+  .img-slides::-webkit-scrollbar {
+    height: 6px; /* Set the width of the scrollbar */
+  }
+  .line-break {
+    height: 20px;
+    background-color: $background;
+  }
+  .one-grid {
+    grid-template-rows: 1fr;
+  }
+}
+
+/* main section */
+
+footer {
+  .back-to-top {
+    display: flex;
+    justify-content: center;
+    background-color: transparentize(#232f3e, $amount: 0.05);
+    color: white;
+    padding: 15px 0 15px 0;
+    width: 100%;
+
+    &:hover {
+      background-color: transparentize(#232f3e, $amount: 0.09);
+    }
+  }
+
+  .bckg-col {
+    background-color: #232f3e;
+  }
+  .container {
+    color: white;
+    background-color: #232f3e;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .hor-line-break {
+      height: 30px;
+      display: block;
+    }
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      padding: 0 10px 0 10px;
+    }
+
+    .cont-line-break {
+      width: 100px;
+      padding: 10px;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        text-decoration: none;
+        color: #ddd;
+        margin-bottom: 10px;
+        font-size: 15px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      h4 {
+        margin-bottom: 12px;
+        white-space: nowrap;
+      }
+    }
+  }
+}
